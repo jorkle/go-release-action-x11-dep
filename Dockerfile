@@ -14,6 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteract
   xz-utils \
   jq \
   ca-certificates \
+  libx11-dev \
   && rm -rf /var/lib/apt/lists/*
 
 # install latest upx 3.96 by wget instead of `apt install upx-ucl`(only 3.95)
